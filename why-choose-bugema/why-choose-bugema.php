@@ -1,9 +1,10 @@
 <?php
 /*
 Plugin Name: Why Choose Bugema University
-Description: Customizable "Why Choose" section for Bugema University with Font Awesome icons
+Description: Customizable "Why Choose" section for Bugema University with Font Awesome icons [why_choose_bugema]
 Version: 1.0
-Author: Your Name
+Author: KASINGYE VIVA
+Author Url: x.com/vivakasingye1
 */
 
 // Enqueue necessary assets
