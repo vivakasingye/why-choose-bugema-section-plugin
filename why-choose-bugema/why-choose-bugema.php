@@ -157,13 +157,13 @@ function why_choose_bugema_create_css() {
       max-width: 1200px;
       margin: auto;
     }
-
-    .why-choose-section h2 {
-      text-align: center;
-      font-size: 2.5rem;
-      color: #fff;
-      margin-bottom: 40px;
-    }
+.why-choose-section h2 {
+	text-align: center;
+	font-size: 2.5rem !important;
+	color: #fff !important;
+	margin-bottom: 40px;
+	text-shadow: 2px 2px 2px #000;
+}
 
     .why-choose-content {
       display: grid;
