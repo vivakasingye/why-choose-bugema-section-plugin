@@ -146,53 +146,78 @@ function why_choose_bugema_create_css() {
     
     $css_file = $css_dir . '/style.css';
     if (!file_exists($css_file)) {
-        $css_content = '.why-choose-section {
-    padding: 80px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
+        $css_content = '
 
-.why-choose-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-    color: #2c3e50;
-}
 
-.why-choose-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
 
-.why-choose-card {
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
 
-.why-choose-card:hover {
-    transform: translateY(-10px);
-}
+    .why-choose-section {
+   
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-.why-choose-card i {
-    font-size: 3rem;
-    color: #3498db;
-    margin-bottom: 20px;
-}
+    .why-choose-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+
+    .why-choose-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .why-choose-card {
+      background-color: #36348e9c;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+
+    .why-choose-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .why-choose-card i {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 15px;
+    }
 
 .why-choose-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #2c3e50;
+	font-size: 1.3rem !important;
+	margin-bottom: 10px;
+	color: #fff !important;
 }
 
-.why-choose-card p {
-    color: #7f8c8d;
-    line-height: 1.6;
-}';
+    .why-choose-card p {
+      font-size: 13px;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .why-choose-section h2 {
+        font-size: 2rem;
+      }
+
+      .why-choose-card i {
+        font-size: 2rem;
+      }
+
+      .why-choose-card h3 {
+        font-size: 1.1rem;
+      }
+    }
+  		
+
+';
         
         file_put_contents($css_file, $css_content);
     }
